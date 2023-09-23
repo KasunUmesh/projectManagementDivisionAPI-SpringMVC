@@ -1,6 +1,8 @@
 package lk.ijse.service;
 
-import lk.ijse.gdse.assignment_2.dto.ProjectDto;
+
+
+import lk.ijse.dto.ProjectDto;
 
 import java.util.UUID;
 

@@ -1,27 +1,20 @@
 package lk.ijse.entity;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.List;
 import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
+@Data
 @Entity
-public class TL {
+public class TL implements SuperEntity{
     @Id
     private UUID tlId;
-
+    @Column(nullable = false)
     private String tlName;
-
+    @Column(nullable = false)
     private String tlEmail;
 
     @OneToMany(mappedBy = "tl",cascade = CascadeType.DETACH)

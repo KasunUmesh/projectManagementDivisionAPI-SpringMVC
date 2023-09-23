@@ -1,6 +1,8 @@
 package lk.ijse.service;
 
-import lk.ijse.gdse.assignment_2.dto.TLDto;
+
+
+import lk.ijse.dto.TLDto;
 
 import java.util.UUID;
 

@@ -2,30 +2,25 @@ package lk.ijse.entity;
 
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
-@Setter
-
+@Data
 @Entity
-public class Project {
+public class Project implements SuperEntity{
     @Id
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid")
     private UUID projectId;
-
+    @Column(nullable = false)
     private String projectName;
-
+    @Column(nullable = false)
     private String projectDeadline;
-
+    @Column(nullable = false)
     private String projectStatus;
 
     @ManyToOne

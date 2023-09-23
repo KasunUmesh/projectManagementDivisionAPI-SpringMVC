@@ -1,10 +1,11 @@
 package lk.ijse.service.impl;
 
-import lk.ijse.gdse.assignment_2.dto.TLDto;
-import lk.ijse.gdse.assignment_2.entity.TL;
-import lk.ijse.gdse.assignment_2.repo.TLRepo;
-import lk.ijse.gdse.assignment_2.service.TLService;
-import lk.ijse.gdse.assignment_2.util.NotFoundException;
+
+import lk.ijse.dto.TLDto;
+import lk.ijse.entity.TL;
+import lk.ijse.repository.TLRepo;
+import lk.ijse.service.TLService;
+import lk.ijse.util.NotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 

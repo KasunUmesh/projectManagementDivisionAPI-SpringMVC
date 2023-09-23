@@ -1,6 +1,7 @@
 package lk.ijse.dto;
 
-import lk.ijse.gdse.assignment_2.entity.Project;
+
+import lk.ijse.entity.Project;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

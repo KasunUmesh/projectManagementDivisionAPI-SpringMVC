@@ -1,8 +1,9 @@
 package lk.ijse.api;
 
-import lk.ijse.gdse.assignment_2.dto.TLDto;
-import lk.ijse.gdse.assignment_2.service.impl.TLServiceImpl;
-import lk.ijse.gdse.assignment_2.util.ResponseUtil;
+
+import lk.ijse.dto.TLDto;
+import lk.ijse.service.impl.TLServiceImpl;
+import lk.ijse.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

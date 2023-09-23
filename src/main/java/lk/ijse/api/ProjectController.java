@@ -1,9 +1,10 @@
 package lk.ijse.api;
 
-import lk.ijse.gdse.assignment_2.dto.ProjectDto;
-import lk.ijse.gdse.assignment_2.service.ProjectService;
-import lk.ijse.gdse.assignment_2.service.impl.ProjectServiceImpl;
-import lk.ijse.gdse.assignment_2.util.ResponseUtil;
+
+import lk.ijse.dto.ProjectDto;
+import lk.ijse.service.ProjectService;
+import lk.ijse.service.impl.ProjectServiceImpl;
+import lk.ijse.util.ResponseUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
